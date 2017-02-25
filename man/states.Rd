@@ -5,7 +5,7 @@
 States
 }
 \description{
-This dataset containing political and socio-demographic information for all fifty states from 2000-2015
+This dataset contains political and socio-demographic information for all fifty states from 2000-2015.
 }
 \usage{data("states")}
 \format{
