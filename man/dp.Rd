@@ -1,26 +1,29 @@
-\name{cfund}
-\alias{cfund}
+\name{dp}
+\alias{dp}
 \docType{data}
 \title{
-Funding for Public Colleges and Universities
+Death Penalty, 2008
 }
 \description{
-This dataset contains information about the funding of public colleges and universities within the states from 2000-2014. It describes the amount of money transferred to public institutions of higher learning and the amount charged to students in tuition.
+This dataset contains information about the presence and use of the death penalty across the fifty states in 2008.
 }
-\usage{data("states")}
+\usage{data("dp")}
 \format{
-  A data frame with 750 observations on the following 87 variables.
+  A data frame with 50 observations on the following 91 variables.
   \describe{
     \item{\code{icpsr}}{ICPSR state code}
     \item{\code{abbrev}}{US postal abbreviation for the state}
     \item{\code{state}}{State name}
     \item{\code{year}}{Year of observation}
-    \item{\code{enroll}}{Number of full-time students enrolled in public colleges or universities across the state}
-    \item{\code{change.state}}{Change, or difference, in the amount of money (per full-time student) provided to institutions of higher learning by the state from one year to the next}
-    \item{\code{change.student}}{Change, or difference, in the amount of tuition charged to students on average at public institutions of higher learning from one year to the next}
-    \item{\code{total.cost}}{Average amount of money spent per full-time student to provide higher education in the state (amount of money states transfer to institutions plus amount students are charged in tuition)}
-    \item{\code{per.state}}{Percent of total cost covered by state funding (amount of college costs paid for by the state, on average)}
-    \item{\code{per.student}}{Percent of total cost covered by the student through their tuition, on average}
+    \item{\code{dp}}{Dichotomous variable indicating if the state has the death penalty in 2008}
+    \item{\code{yr.noDP}}{Number of years the state has been without the death penalty}
+    \item{\code{violent.07}}{Violent crime rate in 2007 (measured per 100,000 citizens)}
+    \item{\code{violent.08}}{Violent crime rate in 2008 (measured per 100,000 citizens)}
+    \item{\code{murder.07}}{Murder rate in 2007 (measured per 100,000 citizens)}
+    \item{\code{murder.08}}{Murder rate in 2008 (measured per 100,000 citizens)}
+    \item{\code{ex.08}}{Number of executions in 2008}
+    \item{\code{ex.last5}}{Number of executions from 2003-2008}
+    \item{\code{innocent}}{Number of death row inmates exonerated since 1973}
     \item{\code{gov.dem}}{Presence of a Democratic governor}
     \item{\code{gov.pid}}{Party identification of governor}
     \item{\code{gov.term}}{Governor's term length}
@@ -54,7 +57,8 @@ This dataset contains information about the funding of public colleges and unive
     \item{\code{up.ncomm}}{Number of committees in upper chamber of state legislature}
     \item{\code{lo.ncomm}}{Number of committees in lower chamber of state legislature}
     \item{\code{court.sal}}{Salary of state supreme court justices}
-    \item{\code{court.select}}{Method of selection to state supreme court}
+    \item{\code{court.select}}{Method of selection to state supreme court -- Appointment, Election, or Merit}
+    \item{\code{court.selectDetail}}{Method of selection to state supreme court -- Detailed}
     \item{\code{pop.total}}{State's total population}
     \item{\code{pop.density}}{Population density (number of persons per square mile)}
     \item{\code{pop.18}}{Percentage of people under the age of 18}
@@ -110,7 +114,7 @@ This dataset contains information about the funding of public colleges and unive
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
-data(cfund)
-## maybe str(cfund) ; plot(cfund) ...
+data(dp)
+## maybe str(dp) ; plot(dp) ...
 }
 \keyword{datasets}

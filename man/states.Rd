@@ -9,7 +9,7 @@ This dataset contains political and socio-demographic information for all fifty 
 }
 \usage{data("states")}
 \format{
-  A data frame with 800 observations on the following 83 variables.
+  A data frame with 800 observations on the following 84 variables.
   \describe{
     \item{\code{icpsr}}{ICPSR state code}
     \item{\code{abbrev}}{US postal abbreviation for the state}
@@ -48,7 +48,8 @@ This dataset contains political and socio-demographic information for all fifty 
     \item{\code{up.ncomm}}{Number of committees in upper chamber of state legislature}
     \item{\code{lo.ncomm}}{Number of committees in lower chamber of state legislature}
     \item{\code{court.sal}}{Salary of state supreme court justices}
-    \item{\code{court.select}}{Method of selection to state supreme court}
+    \item{\code{court.select}}{Method of selection to state supreme court -- Appointment, Election, or Merit}
+    \item{\code{court.selectDetail}}{Method of selection to state supreme court -- Detailed}
     \item{\code{pop.total}}{State's total population}
     \item{\code{pop.density}}{Population density (number of persons per square mile)}
     \item{\code{pop.18}}{Percentage of people under the age of 18}

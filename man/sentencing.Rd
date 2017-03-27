@@ -1,26 +1,22 @@
-\name{cfund}
-\alias{cfund}
+\name{sentencing}
+\alias{sentencing}
 \docType{data}
 \title{
-Funding for Public Colleges and Universities
+Sentencing Guidelines, 2008
 }
 \description{
-This dataset contains information about the funding of public colleges and universities within the states from 2000-2014. It describes the amount of money transferred to public institutions of higher learning and the amount charged to students in tuition.
+This dataset contains information about the use of sentencing guidelines for all fifty states in 2008.
 }
-\usage{data("states")}
+\usage{data("sentencing")}
 \format{
-  A data frame with 750 observations on the following 87 variables.
+  A data frame with 50 observations on the following 84 variables.
   \describe{
     \item{\code{icpsr}}{ICPSR state code}
     \item{\code{abbrev}}{US postal abbreviation for the state}
     \item{\code{state}}{State name}
     \item{\code{year}}{Year of observation}
-    \item{\code{enroll}}{Number of full-time students enrolled in public colleges or universities across the state}
-    \item{\code{change.state}}{Change, or difference, in the amount of money (per full-time student) provided to institutions of higher learning by the state from one year to the next}
-    \item{\code{change.student}}{Change, or difference, in the amount of tuition charged to students on average at public institutions of higher learning from one year to the next}
-    \item{\code{total.cost}}{Average amount of money spent per full-time student to provide higher education in the state (amount of money states transfer to institutions plus amount students are charged in tuition)}
-    \item{\code{per.state}}{Percent of total cost covered by state funding (amount of college costs paid for by the state, on average)}
-    \item{\code{per.student}}{Percent of total cost covered by the student through their tuition, on average}
+    \item{\code{guidelines}}{Dichotomous variable indicating the presence of sentencing guidelines in the state}
+    \item{\code{mandatory}}{Scale indicating if the state sentencing guidelines are more voluntary (lower values) or more mandatory (higher values). A value of zero indicates the state does not have sentencing guidelines.}
     \item{\code{gov.dem}}{Presence of a Democratic governor}
     \item{\code{gov.pid}}{Party identification of governor}
     \item{\code{gov.term}}{Governor's term length}
@@ -54,7 +50,8 @@ This dataset contains information about the funding of public colleges and unive
     \item{\code{up.ncomm}}{Number of committees in upper chamber of state legislature}
     \item{\code{lo.ncomm}}{Number of committees in lower chamber of state legislature}
     \item{\code{court.sal}}{Salary of state supreme court justices}
-    \item{\code{court.select}}{Method of selection to state supreme court}
+    \item{\code{court.select}}{Method of selection to state supreme court -- Appointment, Election, or Merit}
+    \item{\code{court.selectDetail}}{Method of selection to state supreme court -- Detailed}
     \item{\code{pop.total}}{State's total population}
     \item{\code{pop.density}}{Population density (number of persons per square mile)}
     \item{\code{pop.18}}{Percentage of people under the age of 18}
@@ -110,7 +107,7 @@ This dataset contains information about the funding of public colleges and unive
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
-data(cfund)
-## maybe str(cfund) ; plot(cfund) ...
+data(sentencing)
+## maybe str(sentencing) ; plot(sentencing) ...
 }
 \keyword{datasets}
