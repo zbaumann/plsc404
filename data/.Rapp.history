@@ -1,0 +1,2 @@
+load("/Users/zdb1/Dropbox/PennState/PLSC404-AnalyzingPolicy/Data/git/plsc404/data/juvenile.rda")
+View(juvenile)
