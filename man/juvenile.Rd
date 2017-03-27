@@ -31,7 +31,6 @@ This dataset contains information about the incarceration of juveniles across th
     \item{\code{private}}{Number of juveniles in facilities owned and operated by either non-profit or for-profit organizations (per 100,000 juveniles)}
   }
 }
-
 \details{
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
